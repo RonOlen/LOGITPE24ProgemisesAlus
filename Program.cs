@@ -1,17 +1,57 @@
-﻿// See https://aka.ms/new-cons,ole-template for more information
-Console.WriteLine("Hello World!");
-//peab saama sisestada nime
-//if ja else kontrollib, kas on nimi vi on tühi
-//kui leiate kuskilt teksti värviliseks teha, siis kasutage
-Console.WriteLine("Mis teie nimi on!");
-string name = Console.ReadLine();
+﻿using System.Collections;
 
-if (name != "")
+namespace RandomNumbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
 
-    Console.WriteLine("Õige nimi: " + name);
+            int number = new Random().Next(1, 7);
 
-else
+            Console.WriteLine(number);
 
-    Console.WriteLine("Vale nimi");
-Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("ERROR");
+            switch (number)
+            {
+                case 1:
+                    Console.WriteLine("Veeretaisd nr" + number);
+                    break;
+
+                    case 2:
+                    Console.WriteLine("Veeretaisd nr" + number);
+                    break;
+
+                    case 3:
+                    Console.WriteLine("Veeretaisd nr" + number);
+                    break;
+
+                    case 4:
+                    Console.WriteLine("Veeretaisd nr" + number);
+                    break;
+
+                    case 5:
+                    Console.WriteLine("Veeretaisd nr" + number);
+                    break;
+
+                    case 6:
+                    Console.WriteLine("Veeretaisd nr" + number);
+                    break;
+
+                  
+
+
+
+
+
+                default:
+                    Console.WriteLine("Error");
+                    break;
+
+                    //nüüd tuleb kasutada switchi, et näidata numbrit 1-st kuni 6-ni
+            }
+
+
+        }
+    }
+}
