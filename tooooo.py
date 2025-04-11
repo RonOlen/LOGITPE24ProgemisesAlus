@@ -1,0 +1,31 @@
+print("Kas sul on hapukapsast? (jah/ei)")
+hapukapsas = input()
+
+if hapukapsas == "ei":
+    print("Saab hautist teha .... kahjuks")
+
+print("Kas sul on pott madam? (jah/ei)")
+pott = input()
+
+if pott == "ei":
+    print("Suppi teha ei saa.")
+
+print("Kas sul on vett? (jah/ei)")
+vesi = input()
+
+if vesi == "ei":
+    print("Saab mulgikapsaid teha..... kapsas on mid")
+
+print("Kas sul on kartulit? (jah/ei)")
+kartul = input()
+
+print("Kas sul on puljongit? (jah/ei)")
+puljong = input()
+
+print("Kas sul on midagi muud kapis? (jah/ei)")
+kebab = input()
+
+if kebab == "jah":
+     print (" Siis saame tehe ühepaevatoitu yipee")
+else:
+    print("Saab ühepajatoitu teha!")
